@@ -1,6 +1,10 @@
 package tech.saulo.composicao;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Enderco {
+    private Scanner sc = new Scanner(System.in);
     public String getRua() {
         return rua;
     }
@@ -55,4 +59,14 @@ public class Enderco {
     private String cep;
     private String estado;
     private String cidade;
+
+    public void cadastrar() {
+        System.out.println("Informe rua: ");
+        this.rua = sc.nextLine();
+        System.out.println("informe numero:");
+        System.out.println("Informe CEP: ");
+        System.out.println("Informe Cidade: ");
+        System.out.println("Infome Estado: ");
+        System.out.println("Infome o Pais");
+    }
 }
