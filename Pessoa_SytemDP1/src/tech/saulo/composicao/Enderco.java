@@ -64,9 +64,14 @@ public class Enderco {
         System.out.println("Informe rua: ");
         this.rua = sc.nextLine();
         System.out.println("informe numero:");
+        this.numero = sc.nextLine();
         System.out.println("Informe CEP: ");
+        this.cep = sc.nextLine();
         System.out.println("Informe Cidade: ");
+        this.cidade = sc.nextLine();
         System.out.println("Infome Estado: ");
+        this.estado = sc.nextLine();
         System.out.println("Infome o Pais");
+        this.pais = sc.nextLine();
     }
 }
