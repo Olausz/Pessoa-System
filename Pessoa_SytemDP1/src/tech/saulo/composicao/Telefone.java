@@ -1,6 +1,13 @@
 package tech.saulo.composicao;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
 public class Telefone {
+    private int ddd;
+    private String numero;
+    private Scanner sc = new Scanner(System.in);
+
+
     public int getDdd() {
         return ddd;
     }
@@ -17,6 +24,11 @@ public class Telefone {
         this.numero = numero;
     }
 
-    private int ddd;
-    private String numero;
+    public void cadastrar(){
+        System.out.println("Informe o DDD: ");
+        this.ddd = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Infome o numero: ");
+        this.numero = sc.nextLine();
+    }
 }

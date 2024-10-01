@@ -4,7 +4,15 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Enderco {
+    private String rua;
+    private String numero;
+    private String pais;
+    private String cep;
+    private String estado;
+    private String cidade;
+
     private Scanner sc = new Scanner(System.in);
+
     public String getRua() {
         return rua;
     }
@@ -52,13 +60,6 @@ public class Enderco {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
-
-    private String rua;
-    private String numero;
-    private String pais;
-    private String cep;
-    private String estado;
-    private String cidade;
 
     public void cadastrar() {
         System.out.println("Informe rua: ");
